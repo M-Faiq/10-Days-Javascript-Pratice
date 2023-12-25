@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Basic Layout</title>
+    <style>   
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,600&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@900&family=Noto+Serif:ital,wght@1,600&display=swap');
+
+        :root{
+
+            
+            --main-color:brown;
+                --Head-font:'Lexend Deca', sans-serif;
+                --p-font:'Noto Serif', serif;
+
+        }
+        body{
+                  font-family:var(--p-font);
+                  background:slategray;
+                  margin: 0;
+                  padding: 0;
+        }
+        #wrapper{
+                 border:0px solid black;
+                 width: 1000px;
+                 background:white;
+                 margin:0 auto;
+        } 
+        #header{
+            
+            height:100px;
+            
+        }
+         
+        #header h1{
+            color: #fff;
+            font-family: var(--Head-font);
+            padding-left: 15px;
+            
+        } 
+
+        
+
+        .abc{
+            background-color: crimson;
+        }
+        .xyz{
+            background-color: green;
+        }
+
+
+         
+         
+        
+        #menu{
+                background-color:lightsalmon;
+                
+                
+        }
+        #menu ul{
+                margin:0;
+                padding:0;
+                
+                
+            
+        }
+        #menu li{
+                display: inline-block;
+                
+            
+        }
+        #menu li a{
+                display: block;
+                 padding:10px 10px;
+                 text-decoration: none;
+                 color:black;
+        }
+        #menu li a:hover{
+                 background:var(--main-color);
+                 color: white;
+        }
+        #content{
+                 width:800px;
+                 float:left;
+                 min-height: 500px;
+                 padding: 15px;
+                 box-sizing: border-box;
+                 position: relative;
+                 --m-color:red;
+                 color:var(--main-color);
+        }
+        #content a{
+                 color:var(--main-color);
+        }
+
+
+        #content h2{
+            color:var(--main-color);
+            font-family:var(--Head-font);
+        }
+
+                        
+        #sidebar{
+                background-color:lightseagreen;
+                width:200px;
+                float:right;
+                min-height: 500px;
+              
+                 
+        }
+        
+        #Sidebar a{
+                text-decoration: none;
+                color: black;
+                
+        }
+        #Sidebar a:hover{
+                background:var(--main-color);
+                color:white;
+        }
+        #footer{
+                background:var(--main-color);
+                clear: both;
+                padding:10px 10px;
+                text-align: right;
+                 
+        }
+        @media screen and (max-width:1020px) {
+               #wrapper{
+                width:800px;
+            }
+            #content{
+                width:80%;
+            }
+            #sidebar{
+                width:20%;
+            }
+        }
+        @media screen and (max-width:810px) {
+               #wrapper{
+                width:500px;
+            }
+            #content{
+                width:65%;
+            }
+            #sidebar{
+                width:34%;
+            }
+        }
+        @media screen and (max-width:510px) {
+               #wrapper{
+                width:auto;
+            }
+            #content{
+                width: 100%;
+                float: none;
+            }
+            #sidebar{
+                width: 100%;
+                float: none;
+            }
+            #header h1{
+            padding:30px 0 0 0;
+            text-align: center;
+            }
+        }
+    </style>
+    <link rel="stylesheet" media="print" href="learn-css/print.css">
+</head>
+<body>
+    <div id="wrapper">
+
+    <div id="header" class= "abc xyz efg">
+        <h1> Yahoo Baba </h1>   
+    </div>
+
+
+    <div id="menu">
+            <ul>
+                    <li><a href>Home </a></li>
+                    <li> <a href>About us</a></li>
+                    <li><a href>Gallery</a></li>
+                    <li><a href>Contact Us</a></li>
+            </ul>
+    </div>
+    <div id="content">
+        <h2><i class="fa-brands fa-instagram"></i> Design Basic Layout <i class="fa-brands fa-facebook"></i>
+        </h2>
+        <a href="https://www.google.com/">Hellow World</a>
+        <p>Praesent ut lorem porttitor, maximus urna vel, aliquam ligula. Morbi sed sem in eros sodales luctus. Vestibulum rhoncus eget mauris quis sollicitudin. In id ligula suscipit, rhoncus diam sed, mollis quam. Phasellus aliquet ex lectus, at tempor arcu pretium id. Donec eu ipsum et libero euismod feugiat. Proin quis est tincidunt, finibus magna a, posuere metus. Morbi feugiat ultricies diam, vitae pellentesque nisi luctus eu. Vestibulum erat justo, malesuada eget ligula ut, tempus pellentesque dolor. Donec quis ligula orci. Aenean purus ante, maximus venenatis consectetur id, gravida vel risus. Suspendisse potenti.</p>
+        <img src="image/js.jpg" alt="">
+
+    </div>
+
+
+    <div id="sidebar">
+            <ul>
+                   <li><a href>Home</a></li>
+                   <li> <a href>About us</a></li>
+                   <li><a href>Gallery</a></li>
+                   <li><a href>Contact Us</a></li>
+            </ul>
+        
+
+    </div>
+
+
+    <div id="footer">
+                   Yahoo Baba@ Copyright.
+    </div>
+    </div>
+
+
+    <script src="chapter_62-file.js"></script>
+
+</body>
+</html>
